@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kabu station auto login | アプリ紹介</title>
+  <meta name="description" content="個人のWindows PCで利用する、kabuステーションのログイン補助アプリの説明です。">
+  <style>
+    body{max-width:760px;margin:48px auto;padding:0 24px;font-family:system-ui,sans-serif;line-height:1.9;color:#203040;background:#fafcfe}nav{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #d4dee8;padding-bottom:18px}a{color:#145c9e}h1{font-size:2rem;line-height:1.4;margin-top:36px}h2{font-size:1.25rem;margin-top:32px}footer{border-top:1px solid #d4dee8;margin-top:40px;padding-top:18px;font-size:.9rem;color:#526477}code{overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+  <nav aria-label="サイト内ナビゲーション"><a href="index.html" aria-current="page">アプリ紹介</a><a href="privacy.html">プライバシーポリシー</a><a href="terms.html">利用規約</a></nav>
+  <main>
+    <h1>kabu station auto login</h1>
+    <p>本人のWindows PC上で動作する、kabuステーションへのログインを補助する個人利用のアプリです。Googleや証券会社が提供する公式アプリではありません。</p>
+    <h2>主な機能</h2>
+    <ul>
+      <li>本人が設定した予定に従い、PC上でkabuステーションの起動とログインを補助します。</li>
+      <li>本人の許可を受けてGmail APIを利用し、証券会社から届く新着の認証メールを確認します。</li>
+      <li>送信元・件名・受信時刻などを確認した対象メールからワンタイムキーを取り出し、今回のログインに使用します。</li>
+      <li>認証後、証券APIの取得専用接続を確認します。</li>
+    </ul>
+    <h2>Googleアカウントとの連携</h2>
+    <p>Gmailの読み取り権限（<code>gmail.readonly</code>）を使用します。この権限はメールの読み取りを許可するものであり、権限そのものが認証メールだけに限定されるわけではありません。アプリの実装では、設定された送信元と新着時刻で検索対象を絞り込みます。メールの送信・削除・ラベル変更は行いません。</p>
+    <p>メール内容やワンタイムキーはPC上で処理します。詳しいデータの利用目的、保存、連携解除については、<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+    <h2>利用対象と連絡先</h2>
+    <p>アプリ管理者本人の個人利用を対象とし、第三者へのアプリ配布や認証情報の預かりは行っていません。このサイトはアプリの説明用で、ログインフォームや認証情報の入力欄はありません。</p>
+    <p>お問い合わせは、GoogleのOAuth同意画面に表示されるユーザーサポートメールアドレスへご連絡ください。</p>
+  </main>
+  <footer>管理：個人利用のアプリ管理者 / 更新日：2026年10月21日</footer>
+</body>
+</html>
